@@ -1,0 +1,26 @@
+import numpy as np
+a = np.array([10,18,12,3,9,6,15])
+print("The given array is : ", a)
+print()
+minimum = np.min(a)
+maximum = np.max(a)
+sum = np.sum(a)
+avg = np.mean(a)
+median = np.median(a)
+std = np.std(a)
+var = np.var(a)
+min_index = np.argmin(a)
+max_index = np.argmax(a)
+values = {
+"Minimum" : minimum,
+"MAximum" : maximum,
+"Sum" : sum,
+"Average" : avg,
+"Median" : median,
+"Standard Deviation" : std,
+"Variance" : var,
+"Minimum index" : min_index,
+"Maximum index" : max_index
+}
+for key,values in values.items():
+print(key,":",values)
